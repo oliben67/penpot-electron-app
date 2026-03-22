@@ -9,7 +9,7 @@ BACKEND_PORT="9001"
 WAIT_TIMEOUT=120
 
 echo "==> Starting penpot stack via docker compose..."
-docker compose -f "$COMPOSE_FILE" up -d
+docker compose -f "$COMPOSE_FILE" --project-name penpot up -d
 
 echo "==> Waiting for penpot to be ready at $PENPOT_URL (timeout: ${WAIT_TIMEOUT}s)..."
 elapsed=0
