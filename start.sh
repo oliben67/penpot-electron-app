@@ -2,8 +2,7 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-REPO_DIR="$(dirname "$SCRIPT_DIR")"
-COMPOSE_FILE="$REPO_DIR/docker-compose.yml"
+COMPOSE_FILE="$SCRIPT_DIR/docker-compose.yml"
 PENPOT_URL="${PENPOT_URL:-http://localhost:9001}"
 BACKEND_HOST="localhost"
 BACKEND_PORT="9001"
